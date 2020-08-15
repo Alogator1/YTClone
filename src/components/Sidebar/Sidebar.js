@@ -11,9 +11,10 @@ import ThumbUpAltOutlinedIcon from "@material-ui/icons/ThumbUpAltOutlined";
 import ExpandMoreOutlinedIcon from "@material-ui/icons/ExpandMoreOutlined";
 import "./Sidebar.css";
 
-const Sidebar = () => {
+const Sidebar = ({isHidden}) => {
+
   return (
-    <div className="sidebar">
+    <div className={isHidden ? "sidebar_hidden":"sidebar"}>
       <SidebarRow selected title="Home" Icon={HomeIcon} />
       <SidebarRow title="Trending" Icon={WhatshotIcon} />
       <SidebarRow title="Subscriptions" Icon={SubscriptionsIcon} />

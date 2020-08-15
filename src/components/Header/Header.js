@@ -7,18 +7,23 @@ import AppsIcon from "@material-ui/icons/Apps";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import Avatar from "@material-ui/core/Avatar";
 import { Link } from "react-router-dom";
+import IconButton from "@material-ui/core/IconButton";
 
-const Header = () => {
+const Header = ({ changeHidden, isHidden }) => {
   const [search, setSearch] = useState("");
-
-  function IsEnter(key) {
-    alert(key);
-  }
 
   return (
     <div className="header">
       <div className="header_left">
-        <MenuIcon />
+        <IconButton
+          size="small"
+          onClick={() => {
+            changeHidden(!isHidden);
+            console.log(isHidden);
+          }}
+        >
+          <MenuIcon />
+        </IconButton>
         <Link to="/">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/YouTube_Logo.svg/1200px-YouTube_Logo.svg.png"
@@ -35,9 +40,10 @@ const Header = () => {
           onChange={(e) => {
             setSearch(e.target.value);
           }}
+          className="header_searchField"
         />
-        <Link to={`/search/${search}`}>
-          <SearchIcon className="header_search" />
+        <Link to={`/search/${search}`} className="header_searchLink">
+            <SearchIcon className="header_searchIcon" />
         </Link>
       </form>
       <div className="header_right">

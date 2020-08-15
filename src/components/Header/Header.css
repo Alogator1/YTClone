@@ -9,9 +9,23 @@
     background-color: white;
 }
 
+.header_left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 .header_logo{
     height: 25px;
     margin-left: 20px;
+}
+
+.header_menuButton{
+    border: none; 
+    outline: none;
+    background-color: #fff;
 }
 
 .header_mid{
@@ -19,11 +33,24 @@
     align-items: center;
     width: 40%;
     border: 1px solid black;
+    padding: 2px;
 }
 
+.header_searchLink{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
 @media(max-width: 600px){
     .header_mid{
-        display: none;
+        width: 80px;
+        border: none;
+    }
+    .header_searchField{
+        width: 50px;
+    }
+    .header_searchLink{
+        width: 10px;
     }
 }
 

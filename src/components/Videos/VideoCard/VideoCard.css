@@ -8,6 +8,9 @@
     width: 260px;
 }
 
+@media(max-width: 600px){
+}
+
 .videoCard_videoInfo{
     display: flex;
     margin-top: 5px;

@@ -2,10 +2,8 @@
     flex: 0.15;
 }
 
-@media (max-width:600px){
-    .sidebar{
-        display: none;
-    }
+.sidebar_hidden{
+    display: none;
 }
 
 .sidebar hr{
