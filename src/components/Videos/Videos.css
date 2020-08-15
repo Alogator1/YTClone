@@ -1,0 +1,18 @@
+.videos{
+    flex: auto;
+    background-color: #f9f9f9;
+    padding: 30px 20px;
+    padding-bottom: 0;
+}
+
+.videos h2{
+    margin-left: 5px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.videos_videosBlock{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

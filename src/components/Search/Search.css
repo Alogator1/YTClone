@@ -1,0 +1,44 @@
+.searchPage{
+    flex:auto;
+    background-color: #f9f9f9;
+    padding: 30px 20px;
+    padding-bottom: 0;
+}
+
+.searchPage h2{
+    margin-left: 5px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.searchPage_filter{
+    display: flex;
+    color: rgb(99, 99, 99);
+    font-size: 15px;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    width: 75px;
+    
+}
+
+.searchPage hr{
+    height: 1px;
+    border: 0;
+    background-color: lightgray;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+}
+
+.searchPage_searchVideos{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+@media(max-width:600px){
+    .searchPage_searchVideos{
+        justify-content: center;
+    }
+}

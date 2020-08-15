@@ -1,0 +1,20 @@
+.sidebar{
+    flex: 0.15;
+}
+
+@media (max-width:600px){
+    .sidebar{
+        display: none;
+    }
+}
+
+.sidebar hr{
+    height: 1px;
+    border: 0;
+    background-color: lightgray;
+    margin-top: 10px;
+}
+
+.sidebar hr:first-of-type{
+    margin-bottom: 10px;
+}

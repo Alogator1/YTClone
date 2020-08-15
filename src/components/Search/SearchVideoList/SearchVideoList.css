@@ -1,0 +1,34 @@
+.searchVideoList{
+    display: flex;
+    margin-bottom: 30px;
+    max-width: 700px;
+}
+
+@media (max-width:600px){
+    .searchVideoList{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.searchVideoList img{
+    object-fit: contain;
+    width: 246px;
+    height: 138px;
+}
+
+.searchVideoList_text{
+    margin-left: 14px;
+}
+
+.searchVideoList_head{
+    margin-top: 5px;
+    font-size: 14px;
+    color: #606060;
+    margin-bottom: 10px;
+}
+
+.searchVideoList_description{
+    font-size: 14px;
+    color: #606060;
+}
